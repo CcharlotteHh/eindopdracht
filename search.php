@@ -1,3 +1,6 @@
+<?php /*
+template name: search
+*/?>
 <?php get_header(); ?>
 
 <div id="container">
@@ -11,24 +14,20 @@
 	</div>
   
   <div id="menu">
-  
-    <?php
-  wp_nav_menu(
-    array(
-      'theme_location' =>'hoofdmenu',
-      'theme_id' => 'menu'
-  )
-)?>
-    
+  	<ul>
+    	<li id="menu_1"><a href="index.html">Welkom</a></li>
+      <li id="menu_2"><a href="landgoed.html">Landgoed & Omgeving</a></li>
+      <li id="menu_3"><a href="faciliteiten.html">Faciliteiten</a></li>
+      <li id="menu_4"><a href="reserveren.html">Reserveringen & Tarieven</a></li>
+      <li id="menu_5"><a href="contact.html">Contact</a></li>
+    </ul>
 	</div>
- 
-
   
   <div id="content_wrapper">
     
     <div id="content">
       <div class="area">
-      	
+      	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         <?php if (have_posts()){
           while (have_posts()){
             the_post();
